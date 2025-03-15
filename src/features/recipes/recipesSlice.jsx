@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
-const apiKey = '20e8d773027b4b1b9cd8f47f2f39db49';
+const apiKey = '626bf0400ac840f4a9ecd80b95f09f15';
 
 export const fetchRecipes = createAsyncThunk('recipes/fetchRecipes', async (query) => {
   const response = await fetch(`https://api.spoonacular.com/recipes/complexSearch?query=${query}&number=5&apiKey=${apiKey}`);
